@@ -46,7 +46,7 @@ with(totalSteps1,hist(steps,breaks=20,col="lightblue",
                      xlab="Cumulative Steps"))
 ```
 
-![plot of chunk part2b](figure/part2b-1.png)
+![](PA1_template_files/figure-html/part2b-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day.
 
@@ -55,7 +55,7 @@ totalSteps1_mean<-mean(totalSteps1$steps)
 totalSteps1_median<-median(totalSteps1$steps)
 ```
 
-- The mean total number of steps taken per day is 10766.1886792 steps.
+- The mean total number of steps taken per day is 1.0766189\times 10^{4} steps.
 - The median total number of steps taken per day is 10765 steps.
 
 
@@ -72,7 +72,7 @@ with(averageSteps1,plot(interval,steps,type="l",xlab="TIme Interval",ylab="Avg. 
      main="Time Series Plot of Avg Steps in 5-minute Intervals"))
 ```
 
-![plot of chunk part3a](figure/part3a-1.png)
+![](PA1_template_files/figure-html/part3a-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -121,7 +121,7 @@ with(totalSteps2,hist(steps,breaks=20,col="lightblue",
                      xlab="Cumulative Total Number of Steps"))
 ```
 
-![plot of chunk part4d](figure/part4d-1.png)
+![](PA1_template_files/figure-html/part4d-1.png)<!-- -->
 
 5. Calculate and report the mean and median total number of steps taken per day.
 
@@ -130,7 +130,7 @@ totalSteps2_mean<-mean(totalSteps1$steps)
 totalSteps2_median<-median(totalSteps1$steps)
 ```
 
-- The mean total number of steps taken per day is 10766.1886792 steps.
+- The mean total number of steps taken per day is 1.0766189\times 10^{4} steps.
 - The median total number of steps taken per day is 10765 steps.
 - These values are identival to the first estimates from the first section of the assignment.
 - The impact of including the missing data (using the mean to calculate the values), appears to just be to increase the spread of the dataset.
@@ -161,4 +161,4 @@ xyplot(steps~interval|dateType,data=averageSteps2,type="l",layout=c(1,2),
        ylab="Avg. Steps",xlab="Time Interval",main="Time Series Plot of Avg Steps in 5-minute Intervals")
 ```
 
-![plot of chunk part5b](figure/part5b-1.png)
+![](PA1_template_files/figure-html/part5b-1.png)<!-- -->
