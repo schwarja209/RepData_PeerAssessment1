@@ -1,7 +1,7 @@
 Reproducible Research: Assignment 1
 ===================================
 
-###Loading and preprocessing data
+##Loading and preprocessing data
 
 1. Load necessary libraries.
 
@@ -28,7 +28,7 @@ dataClean<-data[!is.na(data$steps),]
 ```
 
 
-###What is mean total number of steps taken per day?
+##What is mean total number of steps taken per day?
 
 1. Calculate the total number of steps taken per day.
 
@@ -59,7 +59,7 @@ totalSteps1_median<-median(totalSteps1$steps)
 - The median total number of steps taken per day is 10765 steps.
 
 
-###What is the average daily activity pattern?
+##What is the average daily activity pattern?
 
 1. Make a time series plot of the 5-minute interval and the average number of steps taken, averaged across all days.
 
@@ -83,7 +83,7 @@ averageStepsMax<-averageSteps1[which.max(averageSteps1$steps),]
 - The 5-minute interval containing the maximum number of steps is 835.
 
 
-###Imputing missing values
+##Imputing missing values
 
 1. Calculate and report the total number of missing values in the dataset.
 
@@ -136,7 +136,7 @@ totalSteps2_median<-median(totalSteps1$steps)
 - The impact of including the missing data (using the mean to calculate the values), appears to just be to increase the spread of the dataset.
 
 
-###Are there differences in activity patterns between weekdays and weekends?
+##Are there differences in activity patterns between weekdays and weekends?
 
 1. Create a new factor variable in the dataset indicating whether a given date is a weekday or weekend day.
 

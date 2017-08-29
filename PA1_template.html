@@ -121,8 +121,8 @@ $(document).ready(function () {
 
 <div id="reproducible-research-assignment-1" class="section level1">
 <h1>Reproducible Research: Assignment 1</h1>
-<div id="loading-and-preprocessing-data" class="section level3">
-<h3>Loading and preprocessing data</h3>
+<div id="loading-and-preprocessing-data" class="section level2">
+<h2>Loading and preprocessing data</h2>
 <ol style="list-style-type: decimal">
 <li>Load necessary libraries.</li>
 </ol>
@@ -142,8 +142,8 @@ data&lt;-read.csv(&quot;activity.csv&quot;)</code></pre>
 <pre class="r"><code>data$date&lt;-as.Date(data$date)
 dataClean&lt;-data[!is.na(data$steps),]</code></pre>
 </div>
-<div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level3">
-<h3>What is mean total number of steps taken per day?</h3>
+<div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
+<h2>What is mean total number of steps taken per day?</h2>
 <ol style="list-style-type: decimal">
 <li>Calculate the total number of steps taken per day.</li>
 </ol>
@@ -167,8 +167,8 @@ totalSteps1_median&lt;-median(totalSteps1$steps)</code></pre>
 <li>The median total number of steps taken per day is 10765 steps.</li>
 </ul>
 </div>
-<div id="what-is-the-average-daily-activity-pattern" class="section level3">
-<h3>What is the average daily activity pattern?</h3>
+<div id="what-is-the-average-daily-activity-pattern" class="section level2">
+<h2>What is the average daily activity pattern?</h2>
 <ol style="list-style-type: decimal">
 <li>Make a time series plot of the 5-minute interval and the average number of steps taken, averaged across all days.</li>
 </ol>
@@ -187,8 +187,8 @@ with(averageSteps1,plot(interval,steps,type=&quot;l&quot;,xlab=&quot;TIme Interv
 <li>The 5-minute interval containing the maximum number of steps is 835.</li>
 </ul>
 </div>
-<div id="imputing-missing-values" class="section level3">
-<h3>Imputing missing values</h3>
+<div id="imputing-missing-values" class="section level2">
+<h2>Imputing missing values</h2>
 <ol style="list-style-type: decimal">
 <li>Calculate and report the total number of missing values in the dataset.</li>
 </ol>
@@ -230,8 +230,8 @@ totalSteps2_median&lt;-median(totalSteps1$steps)</code></pre>
 <li>The impact of including the missing data (using the mean to calculate the values), appears to just be to increase the spread of the dataset.</li>
 </ul>
 </div>
-<div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level3">
-<h3>Are there differences in activity patterns between weekdays and weekends?</h3>
+<div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
+<h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 <ol style="list-style-type: decimal">
 <li>Create a new factor variable in the dataset indicating whether a given date is a weekday or weekend day.</li>
 </ol>
