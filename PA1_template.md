@@ -126,14 +126,14 @@ with(totalSteps2,hist(steps,breaks=20,col="lightblue",
 5. Calculate and report the mean and median total number of steps taken per day.
 
 ```r
-totalSteps2_mean<-mean(totalSteps1$steps)
-totalSteps2_median<-median(totalSteps1$steps)
+totalSteps2_mean<-mean(totalSteps2$steps)
+totalSteps2_median<-median(totalSteps2$steps)
 ```
 
 - The mean total number of steps taken per day is 1.0766189\times 10^{4} steps.
-- The median total number of steps taken per day is 10765 steps.
-- These values are identival to the first estimates from the first section of the assignment.
-- The impact of including the missing data (using the mean to calculate the values), appears to just be to increase the spread of the dataset.
+- The median total number of steps taken per day is 1.0766189\times 10^{4} steps.
+- These values are very similar to the first estimates from the first section of the assignment.
+- The impact of including the missing data (using the mean to calculate the values), appears to mostly just be to increase the spread of the dataset.
 
 
 ##Are there differences in activity patterns between weekdays and weekends?
@@ -162,3 +162,38 @@ xyplot(steps~interval|dateType,data=averageSteps2,type="l",layout=c(1,2),
 ```
 
 ![](PA1_template_files/figure-html/part5b-1.png)<!-- -->
+
+#Appendix
+
+```r
+sessionInfo()
+```
+
+```
+R version 3.4.1 (2017-06-30)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 15063)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252 
+[2] LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] bindrcpp_0.2    lattice_0.20-35 dplyr_0.7.3     plyr_1.8.4     
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.12     assertthat_0.2.0 digest_0.6.12    rprojroot_1.2   
+ [5] grid_3.4.1       R6_2.2.2         backports_1.1.0  magrittr_1.5    
+ [9] evaluate_0.10.1  rlang_0.1.2      stringi_1.1.5    rmarkdown_1.6   
+[13] tools_3.4.1      stringr_1.2.0    glue_1.1.1       yaml_2.1.14     
+[17] compiler_3.4.1   pkgconfig_2.0.1  htmltools_0.3.6  bindr_0.1       
+[21] knitr_1.17       tibble_1.3.4    
+```
